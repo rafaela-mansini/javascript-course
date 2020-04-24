@@ -1,0 +1,7 @@
+.breadcrumbs{ background: #ffc800; padding: 15px 0; margin-bottom: 15px; }
+.no-resize{ resize: none; }
+section{ margin-bottom: 15px; }
+#item-one textarea{height: 180px; overflow: hidden;}
+#item-two label{margin-bottom: 0px;}
+#item-two button{width: 100%;}
+#item-five textarea{height: 260px; overflow: hidden;}
