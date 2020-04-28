@@ -31,7 +31,21 @@ function search_user(){
 }
 
 function render_user(user){
-    var content_user = '<p>'+ user.name +'</p>';
+    var content_user = '';
+    
+    content_user += '<img src="'+ user.avatar_url +'" tile="'+ user.name +'">';
+    content_user += '<p>'+ user.name +'</p>';
+    content_user += '<span class="location">'+ user.location +'</span>';
+    content_user += '<p>'+ (user.bio || 'nothing to say') +'</p>';
+
+    content_user += '<div class="follow">';
+    content_user += '<span>Public repositories: '+ user.public_repos +'</span>';
+    content_user += '<span>Followers: '+ user.followers +'</span>';
+    content_user += '<span>Following: '+ user.following +'</span>';
+    content_user += '</div>';
+
+    content_user += '<a href="'+ user.html_url +'" target="_blank">See repositories</a>';
+    
     document.querySelector('.user').innerHTML = content_user;
 }
 
