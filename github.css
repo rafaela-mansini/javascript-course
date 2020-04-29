@@ -1,0 +1,6 @@
+.user{ margin-top: 50px; padding: 15px; display: none; }
+.user img{ max-width: 240px; width: 100%; margin-right: 10px; }
+.user p:first-child{ font-size: 20px; text-transform: uppercase; margin-bottom: 0px;}
+.location{ font-style: italic; }
+.follow span{ margin-right: 20px; }
+.follow{ margin-bottom: 50px; }
